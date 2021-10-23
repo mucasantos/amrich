@@ -16,17 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="5" translatesAutoresizingMaskIntoConstraints="NO" id="LKc-md-NM3">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5" translatesAutoresizingMaskIntoConstraints="NO" id="LKc-md-NM3">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fruit_163436567" translatesAutoresizingMaskIntoConstraints="NO" id="0KT-HK-62Q">
-                                <rect key="frame" x="87" y="102" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFz-HX-vgg">
-                                <rect key="frame" x="135" y="734" width="144" height="69"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFz-HX-vgg">
+                                <rect key="frame" x="135" y="566.5" width="144" height="69"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="41"/>
                                 <state key="normal" title="Change">
                                     <color key="titleColor" systemColor="tertiarySystemBackgroundColor"/>
@@ -39,9 +33,28 @@
                                 <rect key="frame" x="147" y="388" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="fruit_163436567" translatesAutoresizingMaskIntoConstraints="NO" id="0KT-HK-62Q">
+                                <rect key="frame" x="12" y="104" width="402" height="177"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="177" id="OAn-x0-8Y7"/>
+                                    <constraint firstAttribute="width" constant="402" id="lM5-Xn-WjB"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.17555793287631799" green="0.40624026735092611" blue="0.44503964250054484" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0KT-HK-62Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Nr-JO-VNd"/>
+                            <constraint firstItem="LKc-md-NM3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="51Q-eA-wgl"/>
+                            <constraint firstItem="LKc-md-NM3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CoQ-9b-EJh"/>
+                            <constraint firstItem="0KT-HK-62Q" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PQp-re-vEZ"/>
+                            <constraint firstItem="0KT-HK-62Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ehn-46-Pbh"/>
+                            <constraint firstItem="zFz-HX-vgg" firstAttribute="top" secondItem="0KT-HK-62Q" secondAttribute="bottom" constant="30" id="fJr-hS-Zzr"/>
+                            <constraint firstItem="0KT-HK-62Q" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tBS-iw-snW"/>
+                            <constraint firstItem="LKc-md-NM3" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="uoo-KN-vTG"/>
+                            <constraint firstItem="zFz-HX-vgg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wFC-F5-K4M"/>
+                            <constraint firstAttribute="bottom" secondItem="LKc-md-NM3" secondAttribute="bottom" id="yZt-dG-1qV"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="myImage" destination="z4V-oT-ENv" id="XKc-Lb-rGV"/>
